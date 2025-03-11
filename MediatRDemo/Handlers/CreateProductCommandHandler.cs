@@ -7,6 +7,7 @@ using System;
 namespace MediatRDemo.Handlers;
 
 // Command Handler - Veriyi değiştiren handler
+//IRequestHandler<TRequest, TResponse>: Command ve query işlemlerini gerçekleştiren sınıflar
 public class CreateProductCommandHandler : IRequestHandler<CreateProductCommand, int>
 {
 	private readonly AppDbContext _dbContext;
@@ -18,7 +19,7 @@ public class CreateProductCommandHandler : IRequestHandler<CreateProductCommand,
 
 	public async Task<int> Handle(CreateProductCommand request, CancellationToken cancellationToken)
 	{
-		var product = new Product
+		Product product = new Product
 		{
 			Name = request.Name,
 			Price = request.Price,

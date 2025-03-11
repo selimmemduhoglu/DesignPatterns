@@ -6,6 +6,7 @@ using ValidationException = FluentValidation.ValidationException;
 namespace MediatRDemo.Behavior;
 
 // 4. Pipeline Behavior örneği - Cross-cutting concerns (Validasyon) için
+//IRequest<T>: Hem command hem query'ler için temel arayüz
 public class ValidationBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
 	where TRequest : IRequest<TResponse>
 {

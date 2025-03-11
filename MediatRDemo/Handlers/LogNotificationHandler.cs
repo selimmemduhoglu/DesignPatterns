@@ -3,6 +3,8 @@ using MediatRDemo.Notification;
 
 namespace MediatRDemo.Handlers;
 
+//INotificationHandler<T>: Notification'ları işlemek için kullanılır
+
 public class LogNotificationHandler : INotificationHandler<ProductCreatedNotification>
 {
 	public Task Handle(ProductCreatedNotification notification, CancellationToken cancellationToken)

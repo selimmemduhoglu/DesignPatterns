@@ -8,6 +8,7 @@ using System;
 namespace MediatRDemo.Handlers;
 
 // Query Handler - Veriyi getiren handler
+//IRequestHandler<TRequest, TResponse>: Command ve query işlemlerini gerçekleştiren sınıflar
 public class GetProductsQueryHandler : IRequestHandler<GetProductsQuery, List<ProductDto>>
 {
 	private readonly AppDbContext _dbContext;
@@ -21,11 +22,7 @@ public class GetProductsQueryHandler : IRequestHandler<GetProductsQuery, List<Pr
 	{
 		IQueryable<Product> query = _dbContext.Products;
 
-		if (!request.IncludeOutOfStock)
-		{
-			query = query.Where(p => p.Stock > 0);
-		}
-
+	
 		return await query.Select(p => new ProductDto
 		{
 			Id = p.Id,
