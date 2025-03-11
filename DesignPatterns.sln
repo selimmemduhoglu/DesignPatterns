@@ -13,13 +13,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prototype Pattern", "Protot
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdapterPattern", "AdapterPattern\AdapterPattern.csproj", "{468780EE-9B4C-4644-B44C-3D366CD3F9FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorPattern", "DecoratorPattern\DecoratorPattern.csproj", "{1465356F-8B77-4035-9C30-1BCCABF159FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecoratorPattern", "DecoratorPattern\DecoratorPattern.csproj", "{1465356F-8B77-4035-9C30-1BCCABF159FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyPattern", "ProxyPattern\ProxyPattern.csproj", "{0960FF9C-46FD-4C14-83EB-51ACEA29860D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyPattern", "ProxyPattern\ProxyPattern.csproj", "{0960FF9C-46FD-4C14-83EB-51ACEA29860D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositePattern", "CompositePattern\CompositePattern.csproj", "{B3A9B382-0E15-4DE0-85BB-5BD2EF2F8A20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompositePattern", "CompositePattern\CompositePattern.csproj", "{B3A9B382-0E15-4DE0-85BB-5BD2EF2F8A20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridgePattern", "BridgePattern\BridgePattern.csproj", "{87166A32-EBEB-4C76-B146-AF790FCF5DDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BridgePattern", "BridgePattern\BridgePattern.csproj", "{87166A32-EBEB-4C76-B146-AF790FCF5DDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatRDemo", "MediatRDemo\MediatRDemo.csproj", "{A363D6BC-825C-498B-939D-9FA23669513A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{87166A32-EBEB-4C76-B146-AF790FCF5DDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87166A32-EBEB-4C76-B146-AF790FCF5DDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87166A32-EBEB-4C76-B146-AF790FCF5DDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A363D6BC-825C-498B-939D-9FA23669513A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A363D6BC-825C-498B-939D-9FA23669513A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A363D6BC-825C-498B-939D-9FA23669513A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A363D6BC-825C-498B-939D-9FA23669513A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
