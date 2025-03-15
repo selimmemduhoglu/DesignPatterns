@@ -1,0 +1,41 @@
+Creational Patterns (Yaratýmsal Desenler)
+
+Singleton: Bir sýnýfýn yalnýzca bir örneðinin oluþturulmasýný ve bu örneðe global eriþim saðlar.
+Factory Method: Nesne oluþturma mantýðýný alt sýnýflara devrederek, hangi alt sýnýfýn örnekleneceði kararýný alt sýnýflara býrakýr.
+Abstract Factory: Birbirleriyle iliþkili nesne ailelerini, somut sýnýflarýný belirtmeden oluþturmanýza olanak tanýr.
+Builder: Karmaþýk nesnelerin adým adým oluþturulmasýný saðlayarak, ayný yapým sürecinin farklý gösterimler oluþturabilmesine olanak tanýr.
+Prototype: Mevcut nesnelerin kopyalarýný oluþturarak yeni nesneler üretilmesini saðlar.
+
+Structural Patterns (Yapýsal Desenler)
+
+Adapter: Mevcut bir sýnýfýn arayüzünü, baþka bir arayüze dönüþtürerek uyumlu hale getirir.
+Bridge: Soyutlama ve uygulamayý birbirinden ayýrarak, ikisinin de baðýmsýz olarak geliþtirilebilmesini saðlar.
+Composite: Nesneleri aðaç yapýlarýnda düzenleyerek, tek tek veya nesne gruplarý üzerinde ayný þekilde iþlem yapýlmasýný saðlar.
+Decorator: Nesnelere dinamik olarak yeni sorumluluklar ekleyerek, sýnýf yapýsýný deðiþtirmeden iþlevselliði geniþletir.
+Facade: Karmaþýk bir alt sistemin basitleþtirilmiþ bir arayüzünü saðlayarak, kullanýcýlarý alt sistemin karmaþýklýðýndan korur.
+Flyweight: Çok sayýda benzer nesnenin verimli kullanýmýný saðlayarak bellek tüketimini azaltýr.
+Proxy: Baþka bir nesneye eriþim kontrolü saðlayan veya ek iþlevsellik ekleyen bir yerine geçme nesnesi saðlar.
+
+Behavioral Patterns (Davranýþsal Desenler)
+
+Chain of Responsibility: Ýstekleri bir dizi iþleyici nesne zinciri boyunca aktararak, hangi nesnenin isteði iþleyeceðine çalýþma zamanýnda karar verilmesini saðlar.
+Command: Ýstekleri nesneler olarak kapsülleyerek, istemcilerin farklý isteklerle parametrelendirilmesini, isteklerin sýraya konulmasýný veya kaydedilmesini saðlar.
+Interpreter: Dil ifadelerini deðerlendirmek için bir dilbilgisi tanýmlayarak, belirli bir dildeki cümleleri yorumlayan bir mekanizma sunar.
+Iterator: Bir koleksiyonun iç yapýsýný açýða çýkarmadan öðelerine sýrayla eriþim saðlayan bir nesne sunar.
+Mediator: Nesneler arasýndaki doðrudan iletiþimi ortadan kaldýrarak, bu nesnelerin bir aracý nesne üzerinden iletiþim kurmasýný saðlar.
+Memento: Bir nesnenin iç durumunu açýða çýkarmadan dýþarýya çýkarýlmasýný ve sonradan geri yüklenmesini saðlar.
+Observer: Bir nesnenin durumundaki deðiþiklikleri izleyen ve bu deðiþikliklere tepki veren bir abonelik mekanizmasý tanýmlar.
+State: Bir nesnenin iç durumu deðiþtiðinde davranýþýnýn da deðiþmesine olanak tanýyarak, nesnenin sýnýfýný deðiþtirmiþçesine görünmesini saðlar.
+Strategy: Bir algoritma ailesini tanýmlayarak her birini ayrý sýnýflarda kapsüller ve deðiþtirilebilir hale getirir.
+Template Method: Bir algoritmanýn iskeleti belirlenirken, bazý adýmlarýn uygulanmasý alt sýnýflara býrakýlýr.
+Visitor: Ýþlemleri, üzerinde çalýþtýklarý nesnelerden ayýrarak, ilgili sýnýflara yeni iþlemler eklenmesini kolaylaþtýrýr.
+
+Diðer Önemli Desenler
+
+Unit of Work: Ýþ mantýðý gerçekleþtirilirken yapýlan tüm veritabaný iþlemlerini izler ve tutarlý bir þekilde kalýcý hale getirir.
+Repository: Veri kaynaðý iþlemlerini soyutlayarak, iþ mantýðýný veri eriþim detaylarýndan izole eder.
+Dependency Injection: Nesnelerin baðýmlýlýklarýný dýþarýdan almasýný saðlayarak, gevþek baðlantýlý ve test edilebilir kod oluþturulmasýna yardýmcý olur.
+Specification: Karmaþýk nesne filtreleme mantýðýný ayrý nesnelere ayýrarak, filtreleme kriterlerinin bir araya getirilmesini ve yeniden kullanýlmasýný saðlar.
+CQRS: Komut (yazma) ve sorgu (okuma) sorumluluklarýný ayýrarak, ölçeklenebilirlik ve performansý artýrýr.
+Event Sourcing: Sistemin durumunu deðiþtiren olaylarý kaydederek, durum yerine olaylarýn tutulmasýný ve böylece geçmiþteki herhangi bir zamandaki durumun yeniden oluþturulabilmesini saðlar.
+Lazy Loading: Performansý artýrmak için, nesnelerin yalnýzca gerekli olduðunda yüklenmesini saðlar.

@@ -1,5 +1,31 @@
 ﻿using System;
 
+
+
+
+/*
+Adapter Pattern, iki farklı arayüzü birleştirmek veya bir arayüzü diğerine dönüştürmek için kullanılan bir tasarım desenidir.
+Bu desen, uyumsuz sınıfları bir araya getirmek veya mevcut bir sınıfın arayüzünü değiştirmek amacıyla kullanılır. 
+Aşağıda, bir örnek ile bu deseni anlatalım.
+Örnek olarak, bir müzik çalma uygulamasının MediaPlayer adında bir sınıfı olduğunu ve bu sınıfın sadece mp3 dosyalarını
+çalabildiğini düşünelim. Ancak, uygulama içinde farklı türlerde müzik dosyalarını çalabilen yeni bir sınıf eklemek istiyoruz.
+İşte bu durumda Adapter Pattern devreye girebilir.*/
+
+
+/*Bu örnekte, IMediaPlayer arayüzü bir target (hedef) arayüzü olarak belirlenmiştir. AudioPlayer sınıfı ise Adaptee sınıfını
+ * temsil eder ve sadece mp3 dosyalarını çalabilir. Ardından, MediaAdapter sınıfı, IMediaPlayer arayüzünü implemente ederek
+ * AudioPlayer'ı bu arayüzle uyumlu hale getirir. Son olarak, MusicPlayer sınıfı, IMediaPlayer arayüzünü kullanarak farklı
+ * medya türlerini çalmak için MediaAdapter'ı kullanır.
+Adapter Pattern, var olan bir sisteme yeni bir özellik eklemek veya uyumsuz sınıfları birleştirmek amacıyla sıklıkla kullanılır.
+Bu desen sayesinde mevcut sınıflar, beklenen arayüzü sağlamayan başka sınıflarla birlikte çalışabilir.*/
+
+
+
+
+
+
+
+
 // Target Interface
 public interface IMediaPlayer
 {
@@ -60,7 +86,7 @@ class Program
     {
         // Adapter Pattern kullanımı
 
-        // Adaptee olan AudioPlayer sınıfı
+        // Adapter olan AudioPlayer sınıfı
         AudioPlayer audioPlayer = new AudioPlayer();
 
         // Adapter sınıfı ile AudioPlayer'ı IMediaPlayer arayüzüne uydur
@@ -77,18 +103,3 @@ class Program
     }
 }
 
-/*
-Adapter Pattern, iki farklı arayüzü birleştirmek veya bir arayüzü diğerine dönüştürmek için kullanılan bir tasarım desenidir.
-Bu desen, uyumsuz sınıfları bir araya getirmek veya mevcut bir sınıfın arayüzünü değiştirmek amacıyla kullanılır. 
-Aşağıda, bir örnek ile bu deseni anlatalım.
-Örnek olarak, bir müzik çalma uygulamasının MediaPlayer adında bir sınıfı olduğunu ve bu sınıfın sadece mp3 dosyalarını
-çalabildiğini düşünelim. Ancak, uygulama içinde farklı türlerde müzik dosyalarını çalabilen yeni bir sınıf eklemek istiyoruz.
-İşte bu durumda Adapter Pattern devreye girebilir.*/
-
-
-/*Bu örnekte, IMediaPlayer arayüzü bir target (hedef) arayüzü olarak belirlenmiştir. AudioPlayer sınıfı ise Adaptee sınıfını
- * temsil eder ve sadece mp3 dosyalarını çalabilir. Ardından, MediaAdapter sınıfı, IMediaPlayer arayüzünü implemente ederek
- * AudioPlayer'ı bu arayüzle uyumlu hale getirir. Son olarak, MusicPlayer sınıfı, IMediaPlayer arayüzünü kullanarak farklı
- * medya türlerini çalmak için MediaAdapter'ı kullanır.
-Adapter Pattern, var olan bir sisteme yeni bir özellik eklemek veya uyumsuz sınıfları birleştirmek amacıyla sıklıkla kullanılır.
-Bu desen sayesinde mevcut sınıflar, beklenen arayüzü sağlamayan başka sınıflarla birlikte çalışabilir.*/
